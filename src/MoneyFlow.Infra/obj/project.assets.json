@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "MoneyFlow.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MoneyFlow.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoneyFlow.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MoneyFlow.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MoneyFlow.Domain/MoneyFlow.Domain.csproj",
+      "msbuildProject": "../MoneyFlow.Domain/MoneyFlow.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "MoneyFlow.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Lucas\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Domain\\MoneyFlow.Domain.csproj": {
+              "projectPath": "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Domain\\MoneyFlow.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

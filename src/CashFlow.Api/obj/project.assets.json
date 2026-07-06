@@ -88,6 +88,64 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "MoneyFlow.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MoneyFlow.Communication": "1.0.0",
+          "MoneyFlow.Exception": "1.0.0",
+          "MoneyFlow.Infra": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MoneyFlow.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoneyFlow.Application.dll": {}
+        }
+      },
+      "MoneyFlow.Communication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MoneyFlow.Communication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoneyFlow.Communication.dll": {}
+        }
+      },
+      "MoneyFlow.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MoneyFlow.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoneyFlow.Domain.dll": {}
+        }
+      },
+      "MoneyFlow.Exception/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MoneyFlow.Exception.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoneyFlow.Exception.dll": {}
+        }
+      },
+      "MoneyFlow.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MoneyFlow.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MoneyFlow.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoneyFlow.Infra.dll": {}
+        }
       }
     }
   },
@@ -420,10 +478,39 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "MoneyFlow.Application/1.0.0": {
+      "type": "project",
+      "path": "../MoneyFlow.Application/MoneyFlow.Application.csproj",
+      "msbuildProject": "../MoneyFlow.Application/MoneyFlow.Application.csproj"
+    },
+    "MoneyFlow.Communication/1.0.0": {
+      "type": "project",
+      "path": "../MoneyFlow.Communication/MoneyFlow.Communication.csproj",
+      "msbuildProject": "../MoneyFlow.Communication/MoneyFlow.Communication.csproj"
+    },
+    "MoneyFlow.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MoneyFlow.Domain/MoneyFlow.Domain.csproj",
+      "msbuildProject": "../MoneyFlow.Domain/MoneyFlow.Domain.csproj"
+    },
+    "MoneyFlow.Exception/1.0.0": {
+      "type": "project",
+      "path": "../MoneyFlow.Exception/MoneyFlow.Exception.csproj",
+      "msbuildProject": "../MoneyFlow.Exception/MoneyFlow.Exception.csproj"
+    },
+    "MoneyFlow.Infra/1.0.0": {
+      "type": "project",
+      "path": "../MoneyFlow.Infra/MoneyFlow.Infra.csproj",
+      "msbuildProject": "../MoneyFlow.Infra/MoneyFlow.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "MoneyFlow.Application >= 1.0.0",
+      "MoneyFlow.Communication >= 1.0.0",
+      "MoneyFlow.Exception >= 1.0.0",
+      "MoneyFlow.Infra >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -459,7 +546,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Application\\MoneyFlow.Application.csproj": {
+              "projectPath": "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Application\\MoneyFlow.Application.csproj"
+            },
+            "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Communication\\MoneyFlow.Communication.csproj": {
+              "projectPath": "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Communication\\MoneyFlow.Communication.csproj"
+            },
+            "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Exception\\MoneyFlow.Exception.csproj": {
+              "projectPath": "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Exception\\MoneyFlow.Exception.csproj"
+            },
+            "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Infra\\MoneyFlow.Infra.csproj": {
+              "projectPath": "C:\\Users\\Lucas\\Dev\\MoneyFlow\\src\\MoneyFlow.Infra\\MoneyFlow.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
