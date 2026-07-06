@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EA51E018-CDBD-4CF0-BBFC-589C86D30137}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8D83712A-643D-41A1-9069-09F24A090533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Api", "src\CashFlow.Api\CashFlow.Api.csproj", "{D4B2A718-20C1-4572-92C9-C5645C8911C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4B2A718-20C1-4572-92C9-C5645C8911C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B2A718-20C1-4572-92C9-C5645C8911C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B2A718-20C1-4572-92C9-C5645C8911C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B2A718-20C1-4572-92C9-C5645C8911C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4B2A718-20C1-4572-92C9-C5645C8911C4} = {EA51E018-CDBD-4CF0-BBFC-589C86D30137}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6179D86F-E4FC-4B49-A8AC-8881C5A639D5}
+	EndGlobalSection
+EndGlobal

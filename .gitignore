@@ -1,0 +1,4 @@
+/.vs
+
+/src/CashMoney.Api/bin/**
+/src/CashMoney.Api/obj/**
